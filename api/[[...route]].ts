@@ -3,6 +3,6 @@ import { handle } from "hono/vercel";
 
 const app = new Hono();
 
-app.get("/health", (c) => c.json({ status: "ok" }));
+app.get("/api/health", (c) => c.json({ status: "ok" }));
 
 export default handle(app);
